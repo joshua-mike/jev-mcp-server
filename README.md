@@ -1,8 +1,33 @@
 # jev-mcp-server
 
-An MCP server that gives Claude Code fast, cheap judgments from TypeSafe's **Jev**, a System One model. Its first job is **dynamic model routing**: it scores each task and recommends the cheapest Claude tier that can handle it without losing accuracy. A generic `jev_evaluate` tool covers other uses, and new capabilities plug in as modules.
+An [MCP](https://modelcontextprotocol.io) server that gives Claude Code fast, cheap judgments from [TypeSafe](https://typesafe.ai)'s **Jev**, a System One model. Its first job is **dynamic model routing**: it scores each task and recommends the cheapest Claude tier (Haiku, Sonnet, Opus, or Fable) that can handle it without losing accuracy. A generic `jev_evaluate` tool covers other uses, and new capabilities plug in as modules.
 
 A routing call takes about 150–400 ms and costs about $0.00006 (Jev bills only input tokens, at $0.042/MTok).
+
+```text
+> jev_route_task  "Fix the typo 'recieve' -> 'receive' in README.md."
+Route: haiku — Claude Haiku 5.5 (claude-haiku-5-5), effort low
+Agent tool: model: "haiku"
+
+> jev_route_task  "Our job scheduler deadlocks under load: two workers hold Postgres advisory locks ..."
+Route: opus — Claude Opus 5.5 (claude-opus-5-5), effort high
+```
+
+## Quick start
+
+You need Node.js 20+, [Claude Code](https://claude.com/claude-code), and a TypeSafe API key from the [TypeSafe console](https://console.typesafe.ai). Set the key in the `JEV_ASSIST` environment variable; `TYPESAFE_API_KEY` also works. Never commit the key.
+
+```bash
+git clone https://github.com/joshua-mike/jev-mcp-server.git
+cd jev-mcp-server
+npm ci
+npm run build
+claude mcp add jev --scope user -- node "$(pwd)/dist/index.js"
+```
+
+On Windows, pass a Windows-style absolute path, for example `node C:/code/jev-mcp-server/dist/index.js`. In Git Bash, `$(pwd -W)` prints one.
+
+Open Claude Code and run `/mcp`: `jev` should be connected with five tools. Then add the [routing instructions](#make-claude-use-it) to your `CLAUDE.md`.
 
 ## Tools
 
@@ -16,23 +41,15 @@ A routing call takes about 150–400 ms and costs about $0.00006 (Jev bills only
 
 All tools are read-only. Every tool returns Markdown by default and `structuredContent` for machines; pass `response_format: "json"` to get the full JSON as text.
 
-## Setup
-
-Requires Node 20+ and a TypeSafe key in `JEV_ASSIST`. `TYPESAFE_API_KEY` also works.
-
-```bash
-npm install
-npm run build
-npm test
-```
-
-`npm test` runs 14 unit tests on the policy and 8 end-to-end stdio tests. The live Jev tests are skipped when no key is set.
+## Setup in detail
 
 ### Register with Claude Code
 
 ```bash
 claude mcp add jev --scope user -- node /absolute/path/to/jev-mcp-server/dist/index.js
 ```
+
+`--scope user` makes the server available in every project. Use `--scope project` to share it through a checked-in `.mcp.json` instead.
 
 Claude Code starts the server with its own environment, so `JEV_ASSIST` is inherited. To pin the variable in a shared `.mcp.json` without writing the key into the file, use expansion:
 
@@ -175,6 +192,37 @@ Then add it to `MODULES` in [`src/modules/index.ts`](src/modules/index.ts). Foll
 - Set thresholds by the cost of a wrong answer.
 
 The [use-case map](https://docs.typesafe.ai/concepts/use-case-map) lists more ideas for harness work: semantic context retrieval, tool-call error detection, and reasoning-trace classification.
+
+## Development
+
+```text
+src/
+  index.ts              stdio entry point (dist/index.js)
+  cli.ts                jev-route CLI and Claude Code hook mode (dist/cli.js)
+  server.ts             McpServer factory; registers every module
+  config.ts             environment configuration
+  jev/client.ts         TypeSafe SDK wrapper: timeouts, retries, cost, error wording
+  modules/
+    types.ts            JevModule interface and shared result helpers
+    index.ts            the list of enabled modules
+    routing/            questions.ts (Jev questions), policy.ts (tiers and rules),
+                        decide.ts (pure decision), router.ts, format.ts, index.ts (tools)
+    evaluate/           jev_evaluate and jev_list_models
+test/                   policy unit tests and end-to-end stdio tests
+scripts/routing-eval.ts labeled routing eval with offline replay
+eval/                   routing cases, saved Jev signals, mcp-builder evaluation.xml
+```
+
+| Command | What it does |
+|---|---|
+| `npm run build` | Compile TypeScript to `dist/` |
+| `npm test` | Build, then run 14 policy unit tests and 8 end-to-end stdio tests. Live Jev tests are skipped without a key |
+| `npm run typecheck` | Type-check without emitting |
+| `npm run dev` | Run the server from source with `tsx` |
+| `npm run inspector` | Open the built server in the MCP Inspector |
+| `npm run eval:routing` | Score the labeled routing cases. See [Tuning](#tuning) |
+
+The server speaks MCP over stdio, so it logs to stderr only; stdout carries the protocol.
 
 ## Configuration
 
