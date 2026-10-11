@@ -1,0 +1,2306 @@
+{
+  "rename-var": {
+    "signals": {
+      "task_type": {
+        "choice": "small_edit",
+        "confidence": 1,
+        "probabilities": {
+          "explain": 0,
+          "locate": 0,
+          "small_edit": 1,
+          "feature": 0,
+          "debug": 0,
+          "refactor": 0,
+          "review": 0,
+          "design": 0,
+          "research": 0,
+          "operations": 0,
+          "conversation": 0,
+          "other": 0
+        }
+      },
+      "scores": {
+        "reasoning_depth": {
+          "score": 0.28,
+          "max": 4,
+          "confidence": 0.77
+        },
+        "scope": {
+          "score": 1,
+          "max": 4,
+          "confidence": 1
+        },
+        "ambiguity": {
+          "score": 0.11,
+          "max": 3,
+          "confidence": 0.9
+        },
+        "domain_expertise": {
+          "score": 0.04,
+          "max": 3,
+          "confidence": 0.96
+        },
+        "error_cost": {
+          "score": 0.94,
+          "max": 3,
+          "confidence": 0.82
+        }
+      },
+      "flags": {
+        "trivial": 0.68,
+        "security_sensitive": 0.02,
+        "destructive": 0.02,
+        "external_impact": 0.02,
+        "explicit_depth_request": 0.01,
+        "needs_prior_context": 0.02
+      }
+    },
+    "jev": {
+      "model": "jev-1.13.0",
+      "input_tokens": 1474,
+      "latency_ms": 226,
+      "cost_usd": 0.0000619
+    },
+    "truncated": false
+  },
+  "git-flag": {
+    "signals": {
+      "task_type": {
+        "choice": "explain",
+        "confidence": 0.99,
+        "probabilities": {
+          "explain": 0.99,
+          "locate": 0.01,
+          "small_edit": 0,
+          "feature": 0,
+          "debug": 0,
+          "refactor": 0,
+          "review": 0,
+          "design": 0,
+          "research": 0,
+          "operations": 0,
+          "conversation": 0,
+          "other": 0
+        }
+      },
+      "scores": {
+        "reasoning_depth": {
+          "score": 0.04,
+          "max": 4,
+          "confidence": 0.97
+        },
+        "scope": {
+          "score": 0.01,
+          "max": 4,
+          "confidence": 0.99
+        },
+        "ambiguity": {
+          "score": 0.38,
+          "max": 3,
+          "confidence": 0.61
+        },
+        "domain_expertise": {
+          "score": 1.01,
+          "max": 3,
+          "confidence": 0.98
+        },
+        "error_cost": {
+          "score": 0.83,
+          "max": 3,
+          "confidence": 0.18
+        }
+      },
+      "flags": {
+        "trivial": 0.92,
+        "security_sensitive": 0.05,
+        "destructive": 0.05,
+        "external_impact": 0.02,
+        "explicit_depth_request": 0.01,
+        "needs_prior_context": 0.02
+      }
+    },
+    "jev": {
+      "model": "jev-1.13.0",
+      "input_tokens": 1462,
+      "latency_ms": 230,
+      "cost_usd": 0.0000614
+    },
+    "truncated": false
+  },
+  "bump-version": {
+    "signals": {
+      "task_type": {
+        "choice": "small_edit",
+        "confidence": 1,
+        "probabilities": {
+          "explain": 0,
+          "locate": 0,
+          "small_edit": 1,
+          "feature": 0,
+          "debug": 0,
+          "refactor": 0,
+          "review": 0,
+          "design": 0,
+          "research": 0,
+          "operations": 0,
+          "conversation": 0,
+          "other": 0
+        }
+      },
+      "scores": {
+        "reasoning_depth": {
+          "score": 0.14,
+          "max": 4,
+          "confidence": 0.88
+        },
+        "scope": {
+          "score": 1,
+          "max": 4,
+          "confidence": 1
+        },
+        "ambiguity": {
+          "score": 0.02,
+          "max": 3,
+          "confidence": 0.98
+        },
+        "domain_expertise": {
+          "score": 0.1,
+          "max": 3,
+          "confidence": 0.9
+        },
+        "error_cost": {
+          "score": 0.95,
+          "max": 3,
+          "confidence": 0.88
+        }
+      },
+      "flags": {
+        "trivial": 0.91,
+        "security_sensitive": 0.02,
+        "destructive": 0.02,
+        "external_impact": 0.03,
+        "explicit_depth_request": 0.01,
+        "needs_prior_context": 0.02
+      }
+    },
+    "jev": {
+      "model": "jev-1.13.0",
+      "input_tokens": 1479,
+      "latency_ms": 234,
+      "cost_usd": 0.0000621
+    },
+    "truncated": false
+  },
+  "typo": {
+    "signals": {
+      "task_type": {
+        "choice": "small_edit",
+        "confidence": 1,
+        "probabilities": {
+          "explain": 0,
+          "locate": 0,
+          "small_edit": 1,
+          "feature": 0,
+          "debug": 0,
+          "refactor": 0,
+          "review": 0,
+          "design": 0,
+          "research": 0,
+          "operations": 0,
+          "conversation": 0,
+          "other": 0
+        }
+      },
+      "scores": {
+        "reasoning_depth": {
+          "score": 0.07,
+          "max": 4,
+          "confidence": 0.94
+        },
+        "scope": {
+          "score": 1,
+          "max": 4,
+          "confidence": 1
+        },
+        "ambiguity": {
+          "score": 0.02,
+          "max": 3,
+          "confidence": 0.98
+        },
+        "domain_expertise": {
+          "score": 0,
+          "max": 3,
+          "confidence": 1
+        },
+        "error_cost": {
+          "score": 0.33,
+          "max": 3,
+          "confidence": 0.68
+        }
+      },
+      "flags": {
+        "trivial": 0.93,
+        "security_sensitive": 0.02,
+        "destructive": 0.02,
+        "external_impact": 0.02,
+        "explicit_depth_request": 0.01,
+        "needs_prior_context": 0.02
+      }
+    },
+    "jev": {
+      "model": "jev-1.13.0",
+      "input_tokens": 1472,
+      "latency_ms": 254,
+      "cost_usd": 0.0000618
+    },
+    "truncated": false
+  },
+  "thanks": {
+    "signals": {
+      "task_type": {
+        "choice": "conversation",
+        "confidence": 1,
+        "probabilities": {
+          "explain": 0,
+          "locate": 0,
+          "small_edit": 0,
+          "feature": 0,
+          "debug": 0,
+          "refactor": 0,
+          "review": 0,
+          "design": 0,
+          "research": 0,
+          "operations": 0,
+          "conversation": 1,
+          "other": 0
+        }
+      },
+      "scores": {
+        "reasoning_depth": {
+          "score": 0,
+          "max": 4,
+          "confidence": 1
+        },
+        "scope": {
+          "score": 0,
+          "max": 4,
+          "confidence": 1
+        },
+        "ambiguity": {
+          "score": 2.79,
+          "max": 3,
+          "confidence": 0.8
+        },
+        "domain_expertise": {
+          "score": 0,
+          "max": 3,
+          "confidence": 1
+        },
+        "error_cost": {
+          "score": 0.02,
+          "max": 3,
+          "confidence": 0.97
+        }
+      },
+      "flags": {
+        "trivial": 0.83,
+        "security_sensitive": 0.03,
+        "destructive": 0.01,
+        "external_impact": 0.02,
+        "explicit_depth_request": 0.01,
+        "needs_prior_context": 0.89
+      }
+    },
+    "jev": {
+      "model": "jev-1.13.0",
+      "input_tokens": 1453,
+      "latency_ms": 298,
+      "cost_usd": 0.000061
+    },
+    "truncated": false
+  },
+  "find-def": {
+    "signals": {
+      "task_type": {
+        "choice": "locate",
+        "confidence": 1,
+        "probabilities": {
+          "explain": 0,
+          "locate": 1,
+          "small_edit": 0,
+          "feature": 0,
+          "debug": 0,
+          "refactor": 0,
+          "review": 0,
+          "design": 0,
+          "research": 0,
+          "operations": 0,
+          "conversation": 0,
+          "other": 0
+        }
+      },
+      "scores": {
+        "reasoning_depth": {
+          "score": 0.39,
+          "max": 4,
+          "confidence": 0.68
+        },
+        "scope": {
+          "score": 1.13,
+          "max": 4,
+          "confidence": 0.86
+        },
+        "ambiguity": {
+          "score": 0.12,
+          "max": 3,
+          "confidence": 0.88
+        },
+        "domain_expertise": {
+          "score": 0.08,
+          "max": 3,
+          "confidence": 0.92
+        },
+        "error_cost": {
+          "score": 0.32,
+          "max": 3,
+          "confidence": 0.67
+        }
+      },
+      "flags": {
+        "trivial": 0.07,
+        "security_sensitive": 0.03,
+        "destructive": 0.01,
+        "external_impact": 0.02,
+        "explicit_depth_request": 0.01,
+        "needs_prior_context": 0.02
+      }
+    },
+    "jev": {
+      "model": "jev-1.13.0",
+      "input_tokens": 1480,
+      "latency_ms": 254,
+      "cost_usd": 0.0000622
+    },
+    "truncated": false
+  },
+  "list-todos": {
+    "signals": {
+      "task_type": {
+        "choice": "locate",
+        "confidence": 0.98,
+        "probabilities": {
+          "explain": 0.02,
+          "locate": 0.98,
+          "small_edit": 0,
+          "feature": 0,
+          "debug": 0,
+          "refactor": 0,
+          "review": 0,
+          "design": 0,
+          "research": 0,
+          "operations": 0,
+          "conversation": 0,
+          "other": 0
+        }
+      },
+      "scores": {
+        "reasoning_depth": {
+          "score": 0.72,
+          "max": 4,
+          "confidence": 0.76
+        },
+        "scope": {
+          "score": 3.05,
+          "max": 4,
+          "confidence": 0.85
+        },
+        "ambiguity": {
+          "score": 0.33,
+          "max": 3,
+          "confidence": 0.67
+        },
+        "domain_expertise": {
+          "score": 0.04,
+          "max": 3,
+          "confidence": 0.96
+        },
+        "error_cost": {
+          "score": 0.32,
+          "max": 3,
+          "confidence": 0.68
+        }
+      },
+      "flags": {
+        "trivial": 0.19,
+        "security_sensitive": 0.03,
+        "destructive": 0.01,
+        "external_impact": 0.02,
+        "explicit_depth_request": 0.03,
+        "needs_prior_context": 0.02
+      }
+    },
+    "jev": {
+      "model": "jev-1.13.0",
+      "input_tokens": 1481,
+      "latency_ms": 103,
+      "cost_usd": 0.0000622
+    },
+    "truncated": false
+  },
+  "summarize-file": {
+    "signals": {
+      "task_type": {
+        "choice": "explain",
+        "confidence": 1,
+        "probabilities": {
+          "explain": 1,
+          "locate": 0,
+          "small_edit": 0,
+          "feature": 0,
+          "debug": 0,
+          "refactor": 0,
+          "review": 0,
+          "design": 0,
+          "research": 0,
+          "operations": 0,
+          "conversation": 0,
+          "other": 0
+        }
+      },
+      "scores": {
+        "reasoning_depth": {
+          "score": 1.01,
+          "max": 4,
+          "confidence": 0.93
+        },
+        "scope": {
+          "score": 1,
+          "max": 4,
+          "confidence": 1
+        },
+        "ambiguity": {
+          "score": 0.39,
+          "max": 3,
+          "confidence": 0.61
+        },
+        "domain_expertise": {
+          "score": 0.53,
+          "max": 3,
+          "confidence": 0.48
+        },
+        "error_cost": {
+          "score": 0.14,
+          "max": 3,
+          "confidence": 0.86
+        }
+      },
+      "flags": {
+        "trivial": 0.16,
+        "security_sensitive": 0.02,
+        "destructive": 0.01,
+        "external_impact": 0.02,
+        "explicit_depth_request": 0.01,
+        "needs_prior_context": 0.03
+      }
+    },
+    "jev": {
+      "model": "jev-1.13.0",
+      "input_tokens": 1471,
+      "latency_ms": 108,
+      "cost_usd": 0.0000618
+    },
+    "truncated": false
+  },
+  "disk-usage": {
+    "signals": {
+      "task_type": {
+        "choice": "locate",
+        "confidence": 0.69,
+        "probabilities": {
+          "explain": 0.28,
+          "locate": 0.72,
+          "small_edit": 0,
+          "feature": 0,
+          "debug": 0,
+          "refactor": 0,
+          "review": 0,
+          "design": 0,
+          "research": 0,
+          "operations": 0,
+          "conversation": 0,
+          "other": 0
+        }
+      },
+      "scores": {
+        "reasoning_depth": {
+          "score": 0.04,
+          "max": 4,
+          "confidence": 0.97
+        },
+        "scope": {
+          "score": 0,
+          "max": 4,
+          "confidence": 1
+        },
+        "ambiguity": {
+          "score": 0.5,
+          "max": 3,
+          "confidence": 0.49
+        },
+        "domain_expertise": {
+          "score": 0.2,
+          "max": 3,
+          "confidence": 0.8
+        },
+        "error_cost": {
+          "score": 0.07,
+          "max": 3,
+          "confidence": 0.93
+        }
+      },
+      "flags": {
+        "trivial": 0.96,
+        "security_sensitive": 0.03,
+        "destructive": 0.01,
+        "external_impact": 0.02,
+        "explicit_depth_request": 0.01,
+        "needs_prior_context": 0.02
+      }
+    },
+    "jev": {
+      "model": "jev-1.13.0",
+      "input_tokens": 1463,
+      "latency_ms": 109,
+      "cost_usd": 0.0000614
+    },
+    "truncated": false
+  },
+  "gitignore": {
+    "signals": {
+      "task_type": {
+        "choice": "small_edit",
+        "confidence": 1,
+        "probabilities": {
+          "explain": 0,
+          "locate": 0,
+          "small_edit": 1,
+          "feature": 0,
+          "debug": 0,
+          "refactor": 0,
+          "review": 0,
+          "design": 0,
+          "research": 0,
+          "operations": 0,
+          "conversation": 0,
+          "other": 0
+        }
+      },
+      "scores": {
+        "reasoning_depth": {
+          "score": 0.12,
+          "max": 4,
+          "confidence": 0.9
+        },
+        "scope": {
+          "score": 0.99,
+          "max": 4,
+          "confidence": 0.99
+        },
+        "ambiguity": {
+          "score": 0.17,
+          "max": 3,
+          "confidence": 0.84
+        },
+        "domain_expertise": {
+          "score": 0.3,
+          "max": 3,
+          "confidence": 0.7
+        },
+        "error_cost": {
+          "score": 1.52,
+          "max": 3,
+          "confidence": 0.39
+        }
+      },
+      "flags": {
+        "trivial": 0.94,
+        "security_sensitive": 0.76,
+        "destructive": 0.02,
+        "external_impact": 0.02,
+        "explicit_depth_request": 0.01,
+        "needs_prior_context": 0.03
+      }
+    },
+    "jev": {
+      "model": "jev-1.13.0",
+      "input_tokens": 1471,
+      "latency_ms": 132,
+      "cost_usd": 0.0000618
+    },
+    "truncated": false
+  },
+  "translate-i18n": {
+    "signals": {
+      "task_type": {
+        "choice": "small_edit",
+        "confidence": 0.85,
+        "probabilities": {
+          "explain": 0,
+          "locate": 0,
+          "small_edit": 0.86,
+          "feature": 0.1,
+          "debug": 0,
+          "refactor": 0,
+          "review": 0,
+          "design": 0,
+          "research": 0,
+          "operations": 0,
+          "conversation": 0,
+          "other": 0.04
+        }
+      },
+      "scores": {
+        "reasoning_depth": {
+          "score": 1.01,
+          "max": 4,
+          "confidence": 0.93
+        },
+        "scope": {
+          "score": 1.14,
+          "max": 4,
+          "confidence": 0.88
+        },
+        "ambiguity": {
+          "score": 0.74,
+          "max": 3,
+          "confidence": 0.62
+        },
+        "domain_expertise": {
+          "score": 0.06,
+          "max": 3,
+          "confidence": 0.94
+        },
+        "error_cost": {
+          "score": 1.16,
+          "max": 3,
+          "confidence": 0.79
+        }
+      },
+      "flags": {
+        "trivial": 0.26,
+        "security_sensitive": 0.03,
+        "destructive": 0.02,
+        "external_impact": 0.02,
+        "explicit_depth_request": 0.02,
+        "needs_prior_context": 0.03
+      }
+    },
+    "jev": {
+      "model": "jev-1.13.0",
+      "input_tokens": 1487,
+      "latency_ms": 114,
+      "cost_usd": 0.0000625
+    },
+    "truncated": false
+  },
+  "dark-mode": {
+    "signals": {
+      "task_type": {
+        "choice": "feature",
+        "confidence": 1,
+        "probabilities": {
+          "explain": 0,
+          "locate": 0,
+          "small_edit": 0,
+          "feature": 1,
+          "debug": 0,
+          "refactor": 0,
+          "review": 0,
+          "design": 0,
+          "research": 0,
+          "operations": 0,
+          "conversation": 0,
+          "other": 0
+        }
+      },
+      "scores": {
+        "reasoning_depth": {
+          "score": 1.7,
+          "max": 4,
+          "confidence": 0.75
+        },
+        "scope": {
+          "score": 2,
+          "max": 4,
+          "confidence": 0.89
+        },
+        "ambiguity": {
+          "score": 1.44,
+          "max": 3,
+          "confidence": 0.54
+        },
+        "domain_expertise": {
+          "score": 0.96,
+          "max": 3,
+          "confidence": 0.96
+        },
+        "error_cost": {
+          "score": 1.24,
+          "max": 3,
+          "confidence": 0.69
+        }
+      },
+      "flags": {
+        "trivial": 0.12,
+        "security_sensitive": 0.08,
+        "destructive": 0.02,
+        "external_impact": 0.02,
+        "explicit_depth_request": 0.02,
+        "needs_prior_context": 0.03
+      }
+    },
+    "jev": {
+      "model": "jev-1.13.0",
+      "input_tokens": 1485,
+      "latency_ms": 153,
+      "cost_usd": 0.0000624
+    },
+    "truncated": false
+  },
+  "unit-tests": {
+    "signals": {
+      "task_type": {
+        "choice": "feature",
+        "confidence": 0.62,
+        "probabilities": {
+          "explain": 0,
+          "locate": 0,
+          "small_edit": 0.25,
+          "feature": 0.65,
+          "debug": 0,
+          "refactor": 0,
+          "review": 0,
+          "design": 0,
+          "research": 0,
+          "operations": 0,
+          "conversation": 0,
+          "other": 0.1
+        }
+      },
+      "scores": {
+        "reasoning_depth": {
+          "score": 1.29,
+          "max": 4,
+          "confidence": 0.76
+        },
+        "scope": {
+          "score": 1.49,
+          "max": 4,
+          "confidence": 0.59
+        },
+        "ambiguity": {
+          "score": 1.55,
+          "max": 3,
+          "confidence": 0.56
+        },
+        "domain_expertise": {
+          "score": 0.49,
+          "max": 3,
+          "confidence": 0.52
+        },
+        "error_cost": {
+          "score": 1.29,
+          "max": 3,
+          "confidence": 0.59
+        }
+      },
+      "flags": {
+        "trivial": 0.21,
+        "security_sensitive": 0.03,
+        "destructive": 0.01,
+        "external_impact": 0.02,
+        "explicit_depth_request": 0.02,
+        "needs_prior_context": 0.03
+      }
+    },
+    "jev": {
+      "model": "jev-1.13.0",
+      "input_tokens": 1485,
+      "latency_ms": 113,
+      "cost_usd": 0.0000624
+    },
+    "truncated": false
+  },
+  "health-endpoint": {
+    "signals": {
+      "task_type": {
+        "choice": "feature",
+        "confidence": 0.73,
+        "probabilities": {
+          "explain": 0,
+          "locate": 0,
+          "small_edit": 0.25,
+          "feature": 0.75,
+          "debug": 0,
+          "refactor": 0,
+          "review": 0,
+          "design": 0,
+          "research": 0,
+          "operations": 0,
+          "conversation": 0,
+          "other": 0
+        }
+      },
+      "scores": {
+        "reasoning_depth": {
+          "score": 1.12,
+          "max": 4,
+          "confidence": 0.89
+        },
+        "scope": {
+          "score": 1.16,
+          "max": 4,
+          "confidence": 0.87
+        },
+        "ambiguity": {
+          "score": 1.03,
+          "max": 3,
+          "confidence": 0.79
+        },
+        "domain_expertise": {
+          "score": 0.94,
+          "max": 3,
+          "confidence": 0.94
+        },
+        "error_cost": {
+          "score": 1.42,
+          "max": 3,
+          "confidence": 0.52
+        }
+      },
+      "flags": {
+        "trivial": 0.36,
+        "security_sensitive": 0.13,
+        "destructive": 0.01,
+        "external_impact": 0.03,
+        "explicit_depth_request": 0.01,
+        "needs_prior_context": 0.03
+      }
+    },
+    "jev": {
+      "model": "jev-1.13.0",
+      "input_tokens": 1477,
+      "latency_ms": 111,
+      "cost_usd": 0.000062
+    },
+    "truncated": false
+  },
+  "nodemailer-test": {
+    "signals": {
+      "task_type": {
+        "choice": "debug",
+        "confidence": 1,
+        "probabilities": {
+          "explain": 0,
+          "locate": 0,
+          "small_edit": 0,
+          "feature": 0,
+          "debug": 1,
+          "refactor": 0,
+          "review": 0,
+          "design": 0,
+          "research": 0,
+          "operations": 0,
+          "conversation": 0,
+          "other": 0
+        }
+      },
+      "scores": {
+        "reasoning_depth": {
+          "score": 1.36,
+          "max": 4,
+          "confidence": 0.68
+        },
+        "scope": {
+          "score": 1.27,
+          "max": 4,
+          "confidence": 0.77
+        },
+        "ambiguity": {
+          "score": 1.56,
+          "max": 3,
+          "confidence": 0.56
+        },
+        "domain_expertise": {
+          "score": 0.99,
+          "max": 3,
+          "confidence": 0.99
+        },
+        "error_cost": {
+          "score": 1.55,
+          "max": 3,
+          "confidence": 0.54
+        }
+      },
+      "flags": {
+        "trivial": 0.3,
+        "security_sensitive": 0.53,
+        "destructive": 0.02,
+        "external_impact": 0.07,
+        "explicit_depth_request": 0.02,
+        "needs_prior_context": 0.04
+      }
+    },
+    "jev": {
+      "model": "jev-1.13.0",
+      "input_tokens": 1498,
+      "latency_ms": 99,
+      "cost_usd": 0.0000629
+    },
+    "truncated": false
+  },
+  "class-to-hooks": {
+    "signals": {
+      "task_type": {
+        "choice": "refactor",
+        "confidence": 1,
+        "probabilities": {
+          "explain": 0,
+          "locate": 0,
+          "small_edit": 0,
+          "feature": 0,
+          "debug": 0,
+          "refactor": 1,
+          "review": 0,
+          "design": 0,
+          "research": 0,
+          "operations": 0,
+          "conversation": 0,
+          "other": 0
+        }
+      },
+      "scores": {
+        "reasoning_depth": {
+          "score": 2.01,
+          "max": 4,
+          "confidence": 0.88
+        },
+        "scope": {
+          "score": 2.14,
+          "max": 4,
+          "confidence": 0.88
+        },
+        "ambiguity": {
+          "score": 1.23,
+          "max": 3,
+          "confidence": 0.59
+        },
+        "domain_expertise": {
+          "score": 1,
+          "max": 3,
+          "confidence": 1
+        },
+        "error_cost": {
+          "score": 1.88,
+          "max": 3,
+          "confidence": 0.89
+        }
+      },
+      "flags": {
+        "trivial": 0.03,
+        "security_sensitive": 0.05,
+        "destructive": 0.04,
+        "external_impact": 0.02,
+        "explicit_depth_request": 0.02,
+        "needs_prior_context": 0.04
+      }
+    },
+    "jev": {
+      "model": "jev-1.13.0",
+      "input_tokens": 1479,
+      "latency_ms": 94,
+      "cost_usd": 0.0000621
+    },
+    "truncated": false
+  },
+  "review-small-pr": {
+    "signals": {
+      "task_type": {
+        "choice": "review",
+        "confidence": 1,
+        "probabilities": {
+          "explain": 0,
+          "locate": 0,
+          "small_edit": 0,
+          "feature": 0,
+          "debug": 0,
+          "refactor": 0,
+          "review": 1,
+          "design": 0,
+          "research": 0,
+          "operations": 0,
+          "conversation": 0,
+          "other": 0
+        }
+      },
+      "scores": {
+        "reasoning_depth": {
+          "score": 1.39,
+          "max": 4,
+          "confidence": 0.66
+        },
+        "scope": {
+          "score": 0.97,
+          "max": 4,
+          "confidence": 0.94
+        },
+        "ambiguity": {
+          "score": 1.28,
+          "max": 3,
+          "confidence": 0.61
+        },
+        "domain_expertise": {
+          "score": 0.57,
+          "max": 3,
+          "confidence": 0.56
+        },
+        "error_cost": {
+          "score": 1.44,
+          "max": 3,
+          "confidence": 0.43
+        }
+      },
+      "flags": {
+        "trivial": 0.21,
+        "security_sensitive": 0.16,
+        "destructive": 0.01,
+        "external_impact": 0.02,
+        "explicit_depth_request": 0.04,
+        "needs_prior_context": 0.06
+      }
+    },
+    "jev": {
+      "model": "jev-1.13.0",
+      "input_tokens": 1487,
+      "latency_ms": 106,
+      "cost_usd": 0.0000625
+    },
+    "truncated": false
+  },
+  "zod-validation": {
+    "signals": {
+      "task_type": {
+        "choice": "feature",
+        "confidence": 0.86,
+        "probabilities": {
+          "explain": 0,
+          "locate": 0,
+          "small_edit": 0.13,
+          "feature": 0.87,
+          "debug": 0,
+          "refactor": 0,
+          "review": 0,
+          "design": 0,
+          "research": 0,
+          "operations": 0,
+          "conversation": 0,
+          "other": 0
+        }
+      },
+      "scores": {
+        "reasoning_depth": {
+          "score": 1.86,
+          "max": 4,
+          "confidence": 0.88
+        },
+        "scope": {
+          "score": 1.61,
+          "max": 4,
+          "confidence": 0.66
+        },
+        "ambiguity": {
+          "score": 1.26,
+          "max": 3,
+          "confidence": 0.64
+        },
+        "domain_expertise": {
+          "score": 0.99,
+          "max": 3,
+          "confidence": 0.99
+        },
+        "error_cost": {
+          "score": 1.93,
+          "max": 3,
+          "confidence": 0.84
+        }
+      },
+      "flags": {
+        "trivial": 0.09,
+        "security_sensitive": 0.16,
+        "destructive": 0.02,
+        "external_impact": 0.02,
+        "explicit_depth_request": 0.02,
+        "needs_prior_context": 0.04
+      }
+    },
+    "jev": {
+      "model": "jev-1.13.0",
+      "input_tokens": 1486,
+      "latency_ms": 132,
+      "cost_usd": 0.0000624
+    },
+    "truncated": false
+  },
+  "ci-workflow": {
+    "signals": {
+      "task_type": {
+        "choice": "operations",
+        "confidence": 0.48,
+        "probabilities": {
+          "explain": 0,
+          "locate": 0,
+          "small_edit": 0.08,
+          "feature": 0.4,
+          "debug": 0,
+          "refactor": 0,
+          "review": 0,
+          "design": 0,
+          "research": 0,
+          "operations": 0.52,
+          "conversation": 0,
+          "other": 0
+        }
+      },
+      "scores": {
+        "reasoning_depth": {
+          "score": 1.3,
+          "max": 4,
+          "confidence": 0.75
+        },
+        "scope": {
+          "score": 1.24,
+          "max": 4,
+          "confidence": 0.73
+        },
+        "ambiguity": {
+          "score": 1.62,
+          "max": 3,
+          "confidence": 0.63
+        },
+        "domain_expertise": {
+          "score": 0.96,
+          "max": 3,
+          "confidence": 0.96
+        },
+        "error_cost": {
+          "score": 1.38,
+          "max": 3,
+          "confidence": 0.55
+        }
+      },
+      "flags": {
+        "trivial": 0.21,
+        "security_sensitive": 0.15,
+        "destructive": 0.01,
+        "external_impact": 0.11,
+        "explicit_depth_request": 0.01,
+        "needs_prior_context": 0.03
+      }
+    },
+    "jev": {
+      "model": "jev-1.13.0",
+      "input_tokens": 1479,
+      "latency_ms": 105,
+      "cost_usd": 0.0000621
+    },
+    "truncated": false
+  },
+  "sse-vs-ws": {
+    "signals": {
+      "task_type": {
+        "choice": "design",
+        "confidence": 1,
+        "probabilities": {
+          "explain": 0,
+          "locate": 0,
+          "small_edit": 0,
+          "feature": 0,
+          "debug": 0,
+          "refactor": 0,
+          "review": 0,
+          "design": 1,
+          "research": 0,
+          "operations": 0,
+          "conversation": 0,
+          "other": 0
+        }
+      },
+      "scores": {
+        "reasoning_depth": {
+          "score": 2.12,
+          "max": 4,
+          "confidence": 0.9
+        },
+        "scope": {
+          "score": 0.31,
+          "max": 4,
+          "confidence": 0.73
+        },
+        "ambiguity": {
+          "score": 2.25,
+          "max": 3,
+          "confidence": 0.64
+        },
+        "domain_expertise": {
+          "score": 1.75,
+          "max": 3,
+          "confidence": 0.75
+        },
+        "error_cost": {
+          "score": 1.98,
+          "max": 3,
+          "confidence": 0.77
+        }
+      },
+      "flags": {
+        "trivial": 0.28,
+        "security_sensitive": 0.15,
+        "destructive": 0.01,
+        "external_impact": 0.05,
+        "explicit_depth_request": 0.99,
+        "needs_prior_context": 0.04
+      }
+    },
+    "jev": {
+      "model": "jev-1.13.0",
+      "input_tokens": 1479,
+      "latency_ms": 107,
+      "cost_usd": 0.0000621
+    },
+    "truncated": false
+  },
+  "oauth-review": {
+    "signals": {
+      "task_type": {
+        "choice": "review",
+        "confidence": 1,
+        "probabilities": {
+          "explain": 0,
+          "locate": 0,
+          "small_edit": 0,
+          "feature": 0,
+          "debug": 0,
+          "refactor": 0,
+          "review": 1,
+          "design": 0,
+          "research": 0,
+          "operations": 0,
+          "conversation": 0,
+          "other": 0
+        }
+      },
+      "scores": {
+        "reasoning_depth": {
+          "score": 2.39,
+          "max": 4,
+          "confidence": 0.67
+        },
+        "scope": {
+          "score": 2.05,
+          "max": 4,
+          "confidence": 0.96
+        },
+        "ambiguity": {
+          "score": 1.95,
+          "max": 3,
+          "confidence": 0.93
+        },
+        "domain_expertise": {
+          "score": 2.03,
+          "max": 3,
+          "confidence": 0.97
+        },
+        "error_cost": {
+          "score": 2.96,
+          "max": 3,
+          "confidence": 0.97
+        }
+      },
+      "flags": {
+        "trivial": 0.03,
+        "security_sensitive": 0.99,
+        "destructive": 0.01,
+        "external_impact": 0.02,
+        "explicit_depth_request": 0.04,
+        "needs_prior_context": 0.03
+      }
+    },
+    "jev": {
+      "model": "jev-1.13.0",
+      "input_tokens": 1486,
+      "latency_ms": 110,
+      "cost_usd": 0.0000624
+    },
+    "truncated": false
+  },
+  "deadlock": {
+    "signals": {
+      "task_type": {
+        "choice": "debug",
+        "confidence": 1,
+        "probabilities": {
+          "explain": 0,
+          "locate": 0,
+          "small_edit": 0,
+          "feature": 0,
+          "debug": 1,
+          "refactor": 0,
+          "review": 0,
+          "design": 0,
+          "research": 0,
+          "operations": 0,
+          "conversation": 0,
+          "other": 0
+        }
+      },
+      "scores": {
+        "reasoning_depth": {
+          "score": 3,
+          "max": 4,
+          "confidence": 1
+        },
+        "scope": {
+          "score": 2.11,
+          "max": 4,
+          "confidence": 0.88
+        },
+        "ambiguity": {
+          "score": 1.99,
+          "max": 3,
+          "confidence": 0.95
+        },
+        "domain_expertise": {
+          "score": 2.03,
+          "max": 3,
+          "confidence": 0.97
+        },
+        "error_cost": {
+          "score": 2.59,
+          "max": 3,
+          "confidence": 0.59
+        }
+      },
+      "flags": {
+        "trivial": 0.04,
+        "security_sensitive": 0.09,
+        "destructive": 0.05,
+        "external_impact": 0.05,
+        "explicit_depth_request": 0.03,
+        "needs_prior_context": 0.03
+      }
+    },
+    "jev": {
+      "model": "jev-1.13.0",
+      "input_tokens": 1499,
+      "latency_ms": 124,
+      "cost_usd": 0.000063
+    },
+    "truncated": false
+  },
+  "delete-legacy": {
+    "signals": {
+      "task_type": {
+        "choice": "small_edit",
+        "confidence": 0.72,
+        "probabilities": {
+          "explain": 0,
+          "locate": 0,
+          "small_edit": 0.74,
+          "feature": 0.12,
+          "debug": 0,
+          "refactor": 0.07,
+          "review": 0,
+          "design": 0,
+          "research": 0,
+          "operations": 0.07,
+          "conversation": 0,
+          "other": 0
+        }
+      },
+      "scores": {
+        "reasoning_depth": {
+          "score": 1.12,
+          "max": 4,
+          "confidence": 0.9
+        },
+        "scope": {
+          "score": 1.84,
+          "max": 4,
+          "confidence": 0.85
+        },
+        "ambiguity": {
+          "score": 1.06,
+          "max": 3,
+          "confidence": 0.74
+        },
+        "domain_expertise": {
+          "score": 0.03,
+          "max": 3,
+          "confidence": 0.97
+        },
+        "error_cost": {
+          "score": 1.24,
+          "max": 3,
+          "confidence": 0.74
+        }
+      },
+      "flags": {
+        "trivial": 0.1,
+        "security_sensitive": 0.04,
+        "destructive": 0.84,
+        "external_impact": 0.03,
+        "explicit_depth_request": 0.02,
+        "needs_prior_context": 0.03
+      }
+    },
+    "jev": {
+      "model": "jev-1.13.0",
+      "input_tokens": 1487,
+      "latency_ms": 140,
+      "cost_usd": 0.0000625
+    },
+    "truncated": false
+  },
+  "multi-currency": {
+    "signals": {
+      "task_type": {
+        "choice": "refactor",
+        "confidence": 0.99,
+        "probabilities": {
+          "explain": 0,
+          "locate": 0,
+          "small_edit": 0,
+          "feature": 0.01,
+          "debug": 0,
+          "refactor": 0.99,
+          "review": 0,
+          "design": 0,
+          "research": 0,
+          "operations": 0,
+          "conversation": 0,
+          "other": 0
+        }
+      },
+      "scores": {
+        "reasoning_depth": {
+          "score": 2.92,
+          "max": 4,
+          "confidence": 0.93
+        },
+        "scope": {
+          "score": 3.07,
+          "max": 4,
+          "confidence": 0.94
+        },
+        "ambiguity": {
+          "score": 1.91,
+          "max": 3,
+          "confidence": 0.9
+        },
+        "domain_expertise": {
+          "score": 1.69,
+          "max": 3,
+          "confidence": 0.44
+        },
+        "error_cost": {
+          "score": 2.96,
+          "max": 3,
+          "confidence": 0.97
+        }
+      },
+      "flags": {
+        "trivial": 0.01,
+        "security_sensitive": 0.27,
+        "destructive": 0.35,
+        "external_impact": 0.05,
+        "explicit_depth_request": 0.02,
+        "needs_prior_context": 0.03
+      }
+    },
+    "jev": {
+      "model": "jev-1.13.0",
+      "input_tokens": 1495,
+      "latency_ms": 106,
+      "cost_usd": 0.0000628
+    },
+    "truncated": false
+  },
+  "zero-downtime-migration": {
+    "signals": {
+      "task_type": {
+        "choice": "refactor",
+        "confidence": 0.61,
+        "probabilities": {
+          "explain": 0,
+          "locate": 0,
+          "small_edit": 0,
+          "feature": 0.11,
+          "debug": 0,
+          "refactor": 0.64,
+          "review": 0,
+          "design": 0,
+          "research": 0,
+          "operations": 0.25,
+          "conversation": 0,
+          "other": 0
+        }
+      },
+      "scores": {
+        "reasoning_depth": {
+          "score": 2.85,
+          "max": 4,
+          "confidence": 0.88
+        },
+        "scope": {
+          "score": 2.23,
+          "max": 4,
+          "confidence": 0.42
+        },
+        "ambiguity": {
+          "score": 1.84,
+          "max": 3,
+          "confidence": 0.84
+        },
+        "domain_expertise": {
+          "score": 2.09,
+          "max": 3,
+          "confidence": 0.91
+        },
+        "error_cost": {
+          "score": 2.97,
+          "max": 3,
+          "confidence": 0.97
+        }
+      },
+      "flags": {
+        "trivial": 0.03,
+        "security_sensitive": 0.88,
+        "destructive": 0.88,
+        "external_impact": 0.89,
+        "explicit_depth_request": 0.03,
+        "needs_prior_context": 0.04
+      }
+    },
+    "jev": {
+      "model": "jev-1.13.0",
+      "input_tokens": 1484,
+      "latency_ms": 123,
+      "cost_usd": 0.0000623
+    },
+    "truncated": false
+  },
+  "force-push-keys": {
+    "signals": {
+      "task_type": {
+        "choice": "operations",
+        "confidence": 1,
+        "probabilities": {
+          "explain": 0,
+          "locate": 0,
+          "small_edit": 0,
+          "feature": 0,
+          "debug": 0,
+          "refactor": 0,
+          "review": 0,
+          "design": 0,
+          "research": 0,
+          "operations": 1,
+          "conversation": 0,
+          "other": 0
+        }
+      },
+      "scores": {
+        "reasoning_depth": {
+          "score": 2.09,
+          "max": 4,
+          "confidence": 0.84
+        },
+        "scope": {
+          "score": 2.41,
+          "max": 4,
+          "confidence": 0
+        },
+        "ambiguity": {
+          "score": 1.79,
+          "max": 3,
+          "confidence": 0.73
+        },
+        "domain_expertise": {
+          "score": 1.85,
+          "max": 3,
+          "confidence": 0.77
+        },
+        "error_cost": {
+          "score": 2.99,
+          "max": 3,
+          "confidence": 1
+        }
+      },
+      "flags": {
+        "trivial": 0.04,
+        "security_sensitive": 0.99,
+        "destructive": 0.98,
+        "external_impact": 0.87,
+        "explicit_depth_request": 0.02,
+        "needs_prior_context": 0.09
+      }
+    },
+    "jev": {
+      "model": "jev-1.13.0",
+      "input_tokens": 1484,
+      "latency_ms": 102,
+      "cost_usd": 0.0000623
+    },
+    "truncated": false
+  },
+  "lockfree-ring": {
+    "signals": {
+      "task_type": {
+        "choice": "feature",
+        "confidence": 1,
+        "probabilities": {
+          "explain": 0,
+          "locate": 0,
+          "small_edit": 0,
+          "feature": 1,
+          "debug": 0,
+          "refactor": 0,
+          "review": 0,
+          "design": 0,
+          "research": 0,
+          "operations": 0,
+          "conversation": 0,
+          "other": 0
+        }
+      },
+      "scores": {
+        "reasoning_depth": {
+          "score": 3.02,
+          "max": 4,
+          "confidence": 0.98
+        },
+        "scope": {
+          "score": 2.02,
+          "max": 4,
+          "confidence": 0.85
+        },
+        "ambiguity": {
+          "score": 1.68,
+          "max": 3,
+          "confidence": 0.68
+        },
+        "domain_expertise": {
+          "score": 2.97,
+          "max": 3,
+          "confidence": 0.97
+        },
+        "error_cost": {
+          "score": 2.52,
+          "max": 3,
+          "confidence": 0.53
+        }
+      },
+      "flags": {
+        "trivial": 0.03,
+        "security_sensitive": 0.04,
+        "destructive": 0.02,
+        "external_impact": 0.02,
+        "explicit_depth_request": 0.03,
+        "needs_prior_context": 0.03
+      }
+    },
+    "jev": {
+      "model": "jev-1.13.0",
+      "input_tokens": 1487,
+      "latency_ms": 107,
+      "cost_usd": 0.0000625
+    },
+    "truncated": false
+  },
+  "memory-leak": {
+    "signals": {
+      "task_type": {
+        "choice": "debug",
+        "confidence": 0.98,
+        "probabilities": {
+          "explain": 0,
+          "locate": 0.01,
+          "small_edit": 0,
+          "feature": 0,
+          "debug": 0.98,
+          "refactor": 0,
+          "review": 0,
+          "design": 0,
+          "research": 0.01,
+          "operations": 0,
+          "conversation": 0,
+          "other": 0
+        }
+      },
+      "scores": {
+        "reasoning_depth": {
+          "score": 2.43,
+          "max": 4,
+          "confidence": 0.63
+        },
+        "scope": {
+          "score": 2.72,
+          "max": 4,
+          "confidence": 0.52
+        },
+        "ambiguity": {
+          "score": 2.01,
+          "max": 3,
+          "confidence": 0.82
+        },
+        "domain_expertise": {
+          "score": 1.91,
+          "max": 3,
+          "confidence": 0.91
+        },
+        "error_cost": {
+          "score": 2.24,
+          "max": 3,
+          "confidence": 0.71
+        }
+      },
+      "flags": {
+        "trivial": 0.02,
+        "security_sensitive": 0.07,
+        "destructive": 0.02,
+        "external_impact": 0.03,
+        "explicit_depth_request": 0.03,
+        "needs_prior_context": 0.03
+      }
+    },
+    "jev": {
+      "model": "jev-1.13.0",
+      "input_tokens": 1490,
+      "latency_ms": 133,
+      "cost_usd": 0.0000626
+    },
+    "truncated": false
+  },
+  "permissions-design": {
+    "signals": {
+      "task_type": {
+        "choice": "design",
+        "confidence": 1,
+        "probabilities": {
+          "explain": 0,
+          "locate": 0,
+          "small_edit": 0,
+          "feature": 0,
+          "debug": 0,
+          "refactor": 0,
+          "review": 0,
+          "design": 1,
+          "research": 0,
+          "operations": 0,
+          "conversation": 0,
+          "other": 0
+        }
+      },
+      "scores": {
+        "reasoning_depth": {
+          "score": 2.82,
+          "max": 4,
+          "confidence": 0.72
+        },
+        "scope": {
+          "score": 1.08,
+          "max": 4,
+          "confidence": 0.08
+        },
+        "ambiguity": {
+          "score": 2.07,
+          "max": 3,
+          "confidence": 0.91
+        },
+        "domain_expertise": {
+          "score": 2.01,
+          "max": 3,
+          "confidence": 0.99
+        },
+        "error_cost": {
+          "score": 2.83,
+          "max": 3,
+          "confidence": 0.84
+        }
+      },
+      "flags": {
+        "trivial": 0.06,
+        "security_sensitive": 0.98,
+        "destructive": 0.02,
+        "external_impact": 0.03,
+        "explicit_depth_request": 0.04,
+        "needs_prior_context": 0.03
+      }
+    },
+    "jev": {
+      "model": "jev-1.13.0",
+      "input_tokens": 1492,
+      "latency_ms": 121,
+      "cost_usd": 0.0000627
+    },
+    "truncated": false
+  },
+  "retry-context": {
+    "signals": {
+      "task_type": {
+        "choice": "refactor",
+        "confidence": 0.57,
+        "probabilities": {
+          "explain": 0,
+          "locate": 0,
+          "small_edit": 0,
+          "feature": 0.01,
+          "debug": 0.38,
+          "refactor": 0.61,
+          "review": 0,
+          "design": 0,
+          "research": 0,
+          "operations": 0,
+          "conversation": 0,
+          "other": 0
+        }
+      },
+      "scores": {
+        "reasoning_depth": {
+          "score": 2.96,
+          "max": 4,
+          "confidence": 0.97
+        },
+        "scope": {
+          "score": 2.02,
+          "max": 4,
+          "confidence": 0.93
+        },
+        "ambiguity": {
+          "score": 1.89,
+          "max": 3,
+          "confidence": 0.79
+        },
+        "domain_expertise": {
+          "score": 1.93,
+          "max": 3,
+          "confidence": 0.9
+        },
+        "error_cost": {
+          "score": 2.09,
+          "max": 3,
+          "confidence": 0.89
+        }
+      },
+      "flags": {
+        "trivial": 0.07,
+        "security_sensitive": 0.07,
+        "destructive": 0.04,
+        "external_impact": 0.03,
+        "explicit_depth_request": 0.02,
+        "needs_prior_context": 0.22
+      }
+    },
+    "jev": {
+      "model": "jev-1.13.0",
+      "input_tokens": 1587,
+      "latency_ms": 100,
+      "cost_usd": 0.0000667
+    },
+    "truncated": false
+  },
+  "raft": {
+    "signals": {
+      "task_type": {
+        "choice": "feature",
+        "confidence": 0.99,
+        "probabilities": {
+          "explain": 0,
+          "locate": 0,
+          "small_edit": 0,
+          "feature": 0.99,
+          "debug": 0,
+          "refactor": 0,
+          "review": 0,
+          "design": 0.01,
+          "research": 0,
+          "operations": 0,
+          "conversation": 0,
+          "other": 0
+        }
+      },
+      "scores": {
+        "reasoning_depth": {
+          "score": 3.7,
+          "max": 4,
+          "confidence": 0.75
+        },
+        "scope": {
+          "score": 3.64,
+          "max": 4,
+          "confidence": 0.7
+        },
+        "ambiguity": {
+          "score": 1.94,
+          "max": 3,
+          "confidence": 0.91
+        },
+        "domain_expertise": {
+          "score": 2.57,
+          "max": 3,
+          "confidence": 0.57
+        },
+        "error_cost": {
+          "score": 2.95,
+          "max": 3,
+          "confidence": 0.96
+        }
+      },
+      "flags": {
+        "trivial": 0.01,
+        "security_sensitive": 0.07,
+        "destructive": 0.03,
+        "external_impact": 0.05,
+        "explicit_depth_request": 0.03,
+        "needs_prior_context": 0.04
+      }
+    },
+    "jev": {
+      "model": "jev-1.13.0",
+      "input_tokens": 1499,
+      "latency_ms": 125,
+      "cost_usd": 0.000063
+    },
+    "truncated": false
+  },
+  "trace-storm": {
+    "signals": {
+      "task_type": {
+        "choice": "debug",
+        "confidence": 1,
+        "probabilities": {
+          "explain": 0,
+          "locate": 0,
+          "small_edit": 0,
+          "feature": 0,
+          "debug": 1,
+          "refactor": 0,
+          "review": 0,
+          "design": 0,
+          "research": 0,
+          "operations": 0,
+          "conversation": 0,
+          "other": 0
+        }
+      },
+      "scores": {
+        "reasoning_depth": {
+          "score": 3.08,
+          "max": 4,
+          "confidence": 0.93
+        },
+        "scope": {
+          "score": 3.57,
+          "max": 4,
+          "confidence": 0.64
+        },
+        "ambiguity": {
+          "score": 1.79,
+          "max": 3,
+          "confidence": 0.75
+        },
+        "domain_expertise": {
+          "score": 2.02,
+          "max": 3,
+          "confidence": 0.98
+        },
+        "error_cost": {
+          "score": 2.33,
+          "max": 3,
+          "confidence": 0.64
+        }
+      },
+      "flags": {
+        "trivial": 0.02,
+        "security_sensitive": 0.11,
+        "destructive": 0.03,
+        "external_impact": 0.05,
+        "explicit_depth_request": 0.05,
+        "needs_prior_context": 0.05
+      }
+    },
+    "jev": {
+      "model": "jev-1.13.0",
+      "input_tokens": 1500,
+      "latency_ms": 102,
+      "cost_usd": 0.000063
+    },
+    "truncated": false
+  },
+  "tla-2pc": {
+    "signals": {
+      "task_type": {
+        "choice": "debug",
+        "confidence": 0.86,
+        "probabilities": {
+          "explain": 0,
+          "locate": 0,
+          "small_edit": 0,
+          "feature": 0.03,
+          "debug": 0.87,
+          "refactor": 0,
+          "review": 0.03,
+          "design": 0,
+          "research": 0,
+          "operations": 0,
+          "conversation": 0,
+          "other": 0.07
+        }
+      },
+      "scores": {
+        "reasoning_depth": {
+          "score": 3.58,
+          "max": 4,
+          "confidence": 0.66
+        },
+        "scope": {
+          "score": 2.8,
+          "max": 4,
+          "confidence": 0.52
+        },
+        "ambiguity": {
+          "score": 1.87,
+          "max": 3,
+          "confidence": 0.84
+        },
+        "domain_expertise": {
+          "score": 2.77,
+          "max": 3,
+          "confidence": 0.77
+        },
+        "error_cost": {
+          "score": 2.99,
+          "max": 3,
+          "confidence": 0.99
+        }
+      },
+      "flags": {
+        "trivial": 0.02,
+        "security_sensitive": 0.1,
+        "destructive": 0.04,
+        "external_impact": 0.03,
+        "explicit_depth_request": 0.03,
+        "needs_prior_context": 0.04
+      }
+    },
+    "jev": {
+      "model": "jev-1.13.0",
+      "input_tokens": 1493,
+      "latency_ms": 100,
+      "cost_usd": 0.0000627
+    },
+    "truncated": false
+  },
+  "py2-port": {
+    "signals": {
+      "task_type": {
+        "choice": "refactor",
+        "confidence": 1,
+        "probabilities": {
+          "explain": 0,
+          "locate": 0,
+          "small_edit": 0,
+          "feature": 0,
+          "debug": 0,
+          "refactor": 1,
+          "review": 0,
+          "design": 0,
+          "research": 0,
+          "operations": 0,
+          "conversation": 0,
+          "other": 0
+        }
+      },
+      "scores": {
+        "reasoning_depth": {
+          "score": 3.59,
+          "max": 4,
+          "confidence": 0.66
+        },
+        "scope": {
+          "score": 4,
+          "max": 4,
+          "confidence": 1
+        },
+        "ambiguity": {
+          "score": 1.58,
+          "max": 3,
+          "confidence": 0.59
+        },
+        "domain_expertise": {
+          "score": 2.55,
+          "max": 3,
+          "confidence": 0.55
+        },
+        "error_cost": {
+          "score": 2.96,
+          "max": 3,
+          "confidence": 0.96
+        }
+      },
+      "flags": {
+        "trivial": 0.01,
+        "security_sensitive": 0.12,
+        "destructive": 0.07,
+        "external_impact": 0.05,
+        "explicit_depth_request": 0.04,
+        "needs_prior_context": 0.04
+      }
+    },
+    "jev": {
+      "model": "jev-1.13.0",
+      "input_tokens": 1497,
+      "latency_ms": 96,
+      "cost_usd": 0.0000629
+    },
+    "truncated": false
+  },
+  "do-it-no-context": {
+    "signals": {
+      "task_type": {
+        "choice": "conversation",
+        "confidence": 0.57,
+        "probabilities": {
+          "explain": 0,
+          "locate": 0,
+          "small_edit": 0,
+          "feature": 0,
+          "debug": 0,
+          "refactor": 0,
+          "review": 0,
+          "design": 0,
+          "research": 0,
+          "operations": 0,
+          "conversation": 0.61,
+          "other": 0.39
+        }
+      },
+      "scores": {
+        "reasoning_depth": {
+          "score": 0.11,
+          "max": 4,
+          "confidence": 0.91
+        },
+        "scope": {
+          "score": 0.26,
+          "max": 4,
+          "confidence": 0.77
+        },
+        "ambiguity": {
+          "score": 3,
+          "max": 3,
+          "confidence": 1
+        },
+        "domain_expertise": {
+          "score": 0.02,
+          "max": 3,
+          "confidence": 0.98
+        },
+        "error_cost": {
+          "score": 1.14,
+          "max": 3,
+          "confidence": 0.07
+        }
+      },
+      "flags": {
+        "trivial": 0.25,
+        "security_sensitive": 0.07,
+        "destructive": 0.06,
+        "external_impact": 0.09,
+        "explicit_depth_request": 0.01,
+        "needs_prior_context": 0.97
+      }
+    },
+    "jev": {
+      "model": "jev-1.13.0",
+      "input_tokens": 1455,
+      "latency_ms": 104,
+      "cost_usd": 0.0000611
+    },
+    "truncated": false
+  },
+  "do-it-with-context": {
+    "signals": {
+      "task_type": {
+        "choice": "small_edit",
+        "confidence": 1,
+        "probabilities": {
+          "explain": 0,
+          "locate": 0,
+          "small_edit": 1,
+          "feature": 0,
+          "debug": 0,
+          "refactor": 0,
+          "review": 0,
+          "design": 0,
+          "research": 0,
+          "operations": 0,
+          "conversation": 0,
+          "other": 0
+        }
+      },
+      "scores": {
+        "reasoning_depth": {
+          "score": 0.28,
+          "max": 4,
+          "confidence": 0.77
+        },
+        "scope": {
+          "score": 1,
+          "max": 4,
+          "confidence": 1
+        },
+        "ambiguity": {
+          "score": 0.52,
+          "max": 3,
+          "confidence": 0.5
+        },
+        "domain_expertise": {
+          "score": 0.05,
+          "max": 3,
+          "confidence": 0.95
+        },
+        "error_cost": {
+          "score": 0.89,
+          "max": 3,
+          "confidence": 0.86
+        }
+      },
+      "flags": {
+        "trivial": 0.84,
+        "security_sensitive": 0.02,
+        "destructive": 0.02,
+        "external_impact": 0.03,
+        "explicit_depth_request": 0.01,
+        "needs_prior_context": 0.12
+      }
+    },
+    "jev": {
+      "model": "jev-1.13.0",
+      "input_tokens": 1575,
+      "latency_ms": 108,
+      "cost_usd": 0.0000662
+    },
+    "truncated": false
+  }
+}

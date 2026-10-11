@@ -1,0 +1,45 @@
+{
+  "description": "Hand-labeled routing cases. `expected` is the cheapest tier judged able to do the task well; `acceptable` lists tiers that are also reasonable. Labels are a starting point: replace them with outcomes from your own work (see JEV_ROUTER_LOG).",
+  "cases": [
+    { "id": "thanks", "source": "user_turn", "task": "thanks, that worked!", "expected": "haiku" },
+    { "id": "git-flag", "source": "user_turn", "task": "What does the --force-with-lease flag do in git push?", "expected": "haiku", "acceptable": ["sonnet"] },
+    { "id": "rename-var", "task": "Rename the variable `cnt` to `count` in src/utils/stats.ts.", "expected": "haiku" },
+    { "id": "typo", "task": "Fix the typo 'recieve' -> 'receive' in README.md.", "expected": "haiku" },
+    { "id": "find-def", "task": "Find where the function `parseConfig` is defined in this repository and report the file path and line number.", "expected": "haiku" },
+    { "id": "bump-version", "task": "Bump the version in package.json from 1.4.2 to 1.4.3.", "expected": "haiku" },
+    { "id": "list-todos", "task": "List every TODO comment under src/ as a bulleted list with file and line number. Do not change any files.", "expected": "haiku" },
+    { "id": "summarize-file", "task": "Summarize what src/cache/lru.ts does in two sentences.", "expected": "haiku", "acceptable": ["sonnet"] },
+    { "id": "gitignore", "task": "Add a .gitignore entry for the .env.local file.", "expected": "haiku" },
+    { "id": "disk-usage", "source": "user_turn", "task": "hey what's the command to see disk usage of each folder on linux?", "expected": "haiku" },
+    { "id": "translate-i18n", "task": "Translate the error messages in src/i18n/en.json into Spanish and save them as src/i18n/es.json with the same keys.", "expected": "haiku", "acceptable": ["sonnet"] },
+
+    { "id": "dark-mode", "task": "Add a dark-mode toggle to the settings page that persists the choice in localStorage. The app uses React and Tailwind.", "expected": "sonnet" },
+    { "id": "unit-tests", "task": "Write unit tests for the `formatCurrency` helper in src/lib/format.ts covering negative numbers, zero, and rounding.", "expected": "sonnet", "acceptable": ["haiku"] },
+    { "id": "health-endpoint", "task": "Add a /health endpoint to the Express server that returns process uptime and the current git commit hash.", "expected": "sonnet", "acceptable": ["haiku"] },
+    { "id": "nodemailer-test", "task": "The test 'user signup sends welcome email' fails with \"TypeError: mailer.send is not a function\" after we upgraded nodemailer from v6 to v7. Fix it.", "expected": "sonnet" },
+    { "id": "class-to-hooks", "task": "Convert the six class components in src/components/legacy/ to function components with hooks, keeping behavior identical.", "expected": "sonnet" },
+    { "id": "review-small-pr", "task": "Review this 40-line diff that adds offset pagination to the GET /orders endpoint for obvious bugs and style issues, and list what you find.", "expected": "sonnet", "acceptable": ["haiku"] },
+    { "id": "zod-validation", "task": "Add zod validation to the three POST handlers in src/routes/orders.ts and return HTTP 400 with per-field errors when validation fails.", "expected": "sonnet" },
+    { "id": "ci-workflow", "task": "Write a GitHub Actions workflow that runs lint and tests on pull requests for this Node 20 project.", "expected": "sonnet", "acceptable": ["haiku"] },
+    { "id": "delete-legacy", "task": "Delete the unused scripts/legacy-deploy.sh and the old dist/ build artifacts, then update the README to remove references to the legacy deploy.", "expected": "sonnet" },
+    { "id": "sse-vs-ws", "source": "user_turn", "task": "think hard about this: should we use server-sent events or websockets for our live notifications feature? We have about 5k concurrent users.", "expected": "sonnet", "acceptable": ["opus"] },
+
+    { "id": "deadlock", "task": "Our job scheduler occasionally deadlocks under load: two workers each hold a Postgres advisory lock and wait on the other. Find the root cause in src/scheduler/ and fix it without reducing throughput.", "expected": "opus", "acceptable": ["fable"] },
+    { "id": "oauth-review", "task": "Review the OAuth2 PKCE login flow in src/auth/ for security vulnerabilities, including token storage, state parameter handling, and redirect URI validation.", "expected": "opus" },
+    { "id": "zero-downtime-migration", "task": "Write a migration that splits users.name into first_name and last_name on our 40M-row production Postgres table without downtime.", "expected": "opus" },
+    { "id": "multi-currency", "task": "Refactor the payment service to support multiple currencies. Amounts are stored as floating-point USD across about 30 files; move to integer minor units with per-currency precision.", "expected": "opus" },
+    { "id": "memory-leak", "task": "Memory usage of our Node API grows about 200MB per hour in production. Investigate the heap snapshots in ./profiles and identify the leak.", "expected": "opus", "acceptable": ["sonnet"] },
+    { "id": "permissions-design", "task": "Design the data model and API for a multi-tenant permission system with roles, resource-level overrides, and audit logging. Weigh RBAC against ReBAC for our scale.", "expected": "opus", "acceptable": ["fable"] },
+    { "id": "force-push-keys", "task": "Force-push the cleaned-up history to main and rotate the AWS keys that were accidentally committed in commit a1b2c3.", "expected": "opus" },
+    { "id": "lockfree-ring", "task": "Implement a lock-free single-producer single-consumer ring buffer in Rust with correct memory orderings, plus loom tests that exercise the concurrency.", "expected": "opus", "acceptable": ["fable"] },
+    { "id": "retry-context", "source": "user_turn", "task": "try again but use the other approach", "context": "The previous attempt to fix a race in the websocket reconnect logic by adding a mutex failed. The other approach is to restructure reconnection as an explicit state machine.", "expected": "opus", "acceptable": ["sonnet"] },
+
+    { "id": "raft", "task": "Design and implement a Raft-based replication layer for our embedded key-value store, including leader election, log compaction, membership changes, and a written argument for linearizability under network partitions.", "expected": "fable", "acceptable": ["opus"] },
+    { "id": "trace-storm", "task": "Our traces show p99 latency spikes only when three services interact during specific retry storms. Analyze the traces and the code of all three services, find the root cause, and prove it with a reproduction.", "expected": "fable", "acceptable": ["opus"] },
+    { "id": "tla-2pc", "task": "Formally verify with TLA+ that our two-phase commit implementation in src/txn/ cannot lose committed writes when the coordinator crashes, and fix any bugs the model checker finds.", "expected": "fable", "acceptable": ["opus"] },
+    { "id": "py2-port", "task": "Port our 150k-line Python 2 trading engine to Python 3.12 while preserving bit-exact numerical results, and design a differential testing harness that proves equivalence.", "expected": "fable", "acceptable": ["opus"] },
+
+    { "id": "do-it-no-context", "source": "user_turn", "task": "yes, go ahead and do that", "expected": "opus", "expect_status": "insufficient_context" },
+    { "id": "do-it-with-context", "source": "user_turn", "task": "yes, go ahead and do that", "context": "Proposed in the previous turn: rename the variable `cnt` to `count` in src/utils/stats.ts.", "expected": "haiku", "acceptable": ["sonnet"] }
+  ]
+}

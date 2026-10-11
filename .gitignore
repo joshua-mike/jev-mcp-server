@@ -1,0 +1,10 @@
+node_modules/
+dist/
+
+# Routing decision logs (JEV_ROUTER_LOG) contain task text
+*.jsonl
+
+# Local secrets and policy overrides
+.env
+.env.*
+*.local.json

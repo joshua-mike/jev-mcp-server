@@ -1,0 +1,26 @@
+{
+  "description": "Held-out routing cases written after the default policy was tuned on routing-cases.json. Use these to check a policy change does not just fit the training labels.",
+  "cases": [
+    { "id": "let-vs-const", "source": "user_turn", "task": "What's the difference between let and const in JavaScript?", "expected": "haiku" },
+    { "id": "docstring", "task": "Add a docstring to the `retry` function in utils/net.py describing its parameters and return value.", "expected": "haiku", "acceptable": ["sonnet"] },
+    { "id": "sort-imports", "task": "Sort the import statements alphabetically in src/app.ts.", "expected": "haiku" },
+    { "id": "last-commits", "source": "user_turn", "task": "show me the last 5 commits on this branch", "expected": "haiku" },
+    { "id": "reset-email-name", "task": "Update the password reset email template to greet the user by their first name.", "expected": "haiku", "acceptable": ["sonnet"] },
+    { "id": "ok", "source": "user_turn", "task": "ok", "expected": "haiku" },
+
+    { "id": "cursor-pagination", "task": "Add cursor-based pagination to the /users list endpoint and update the frontend table to load more rows on scroll.", "expected": "sonnet", "acceptable": ["opus"] },
+    { "id": "eslint-decorators", "task": "ESLint fails with 'Parsing error: Unexpected token @' on files that use the new decorators syntax. Fix the lint config.", "expected": "sonnet", "acceptable": ["haiku"] },
+    { "id": "dockerfile", "task": "Write a Dockerfile for this FastAPI app with a multi-stage build and a non-root user.", "expected": "sonnet", "acceptable": ["haiku"] },
+    { "id": "csv-export", "task": "Add a CSV export button to the reports page that downloads the currently filtered rows.", "expected": "sonnet" },
+    { "id": "bundle-size", "task": "Our React bundle grew from 300KB to 2.1MB in the last release. Find out why and bring it back down without breaking the lazy-loaded routes.", "expected": "sonnet", "acceptable": ["opus"] },
+
+    { "id": "session-mixup", "task": "Users report they are sometimes logged in as a different user since last week's CDN change. Investigate the session caching and fix it.", "expected": "opus", "acceptable": ["fable"] },
+    { "id": "idempotent-billing", "task": "Rewrite the billing reconciliation job so it is idempotent and safe to retry after partial failures; it currently double-charges customers when a run crashes midway.", "expected": "opus" },
+    { "id": "prod-migration-run", "task": "Run the database migration script against the live production cluster and verify the row counts afterwards.", "expected": "opus", "acceptable": ["sonnet"] },
+
+    { "id": "query-planner", "task": "Design a cost-based query planner for our columnar database that reorders joins across 20+ tables with cardinality estimation, implement the core enumeration algorithm, and prove its optimality bounds.", "expected": "fable", "acceptable": ["opus"] },
+    { "id": "nondeterministic-training", "task": "Losses diverge between identical runs of our distributed training job, but only at 64 GPUs. Find and fix the source of nondeterminism.", "expected": "fable", "acceptable": ["opus"] },
+
+    { "id": "other-two-files", "source": "user_turn", "task": "same thing for the other two files", "expected": "opus", "expect_status": "insufficient_context" }
+  ]
+}
